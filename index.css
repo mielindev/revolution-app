@@ -1,0 +1,129 @@
+/* Reset CSS */
+* {
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+}
+
+/* Header CSS */
+header {
+  padding: 65px 0;
+}
+header #header__content {
+  display: flex;
+  justify-content: space-between;
+}
+header .header__left,
+header .header__right {
+  display: flex;
+  align-items: center;
+}
+
+/* Header Left CSS */
+
+.header__left .header__logo img {
+  width: 50%;
+}
+
+.header__navbar .header__bar span {
+  display: block;
+  width: 16px;
+  height: 1px;
+  background-color: #000;
+}
+.header__navbar .header__bar {
+  display: flex;
+  flex-direction: column;
+  width: 16px;
+  height: 14px;
+  gap: 4px;
+  margin-right: 20px;
+}
+
+.header__navbar {
+  display: flex;
+  align-items: center;
+}
+
+/* Header Right CSS */
+
+.header__right .header__music {
+  display: inline-flex;
+  align-items: flex-end;
+  gap: 2px;
+  width: 20px;
+  height: 14px;
+  cursor: pointer;
+}
+
+.header__right .header__music span {
+  width: 2px;
+  height: 7px;
+  background-color: #000;
+}
+
+.header__music span:first-child {
+  animation: music-bar 2s 1s ease-in alternate infinite;
+}
+
+.header__music span:nth-child(2) {
+  animation: music-bar 2s 0.5 ease-out alternate infinite;
+}
+
+.header__music span:nth-child(3) {
+  animation: music-bar 2s 1.5s ease-in-out alternate infinite;
+}
+
+.header__music span:nth-child(4) {
+  animation: music-bar 2s 0.25s ease alternate infinite;
+}
+
+.header__right .header__language {
+  padding: 0 20px;
+}
+
+.header__right .header__language a {
+  text-decoration: none;
+  color: black;
+}
+
+.header__right .header__language i {
+  margin-left: 5px;
+}
+/* Keyframes */
+@keyframes music-bar {
+  0% {
+    height: 6px;
+  }
+  10% {
+    height: 10px;
+  }
+  20% {
+    height: 6px;
+  }
+  30% {
+    height: 14px;
+  }
+  40% {
+    height: 18px;
+  }
+  50% {
+    height: 6px;
+  }
+  60% {
+    height: 16px;
+  }
+  70% {
+    height: 10px;
+  }
+  80% {
+    height: 12px;
+  }
+  90% {
+    height: 4px;
+  }
+  100% {
+    height: 18px;
+  }
+}
